@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    let number = +prompt("Nhập số lượng phần tử của mảng")
+    let max = 0;
+    let tong = 0;
+    let tb = 0;
+    for (let i = 0; i < number; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " của mảng")
+    }
+    for (let j = 0; j < number; j++) {
+        tong += arr[j]
+        if (arr[j] > max) {
+            max = arr[j];
+        }
+    }
+    tb = tong / number;
+    alert("Mảng hiện có là: " + arr)
+    alert("Phần tử lớn nhất là: " + max);
+    alert("Giá trị trung bình của mảng là: " + tb);
+</script>
+</html>
